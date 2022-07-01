@@ -5,10 +5,10 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>六角西餐廳</title>
-   <meta name="description" content="吃一口就無法忘懷的漢堡">
+   <meta name="description" content="咬一口就無法忘懷的漢堡">
    <link rel="shortcut icon" href="https://www.hexschool.com/favicon.ico">
    <meta property="og:title" content="六角西餐廳" />
-   <meta property="og:description" content="吃一口就無法忘懷的漢堡" />
+   <meta property="og:description" content="咬一口就無法忘懷的漢堡" />
    <meta property="og:type" content="website" />
    <meta property="og:image" content="img/bitmap.png" />
    <meta property="og:url" content="https://hexschool.github.io/Rwd_sketch_export/#artboard0" />
@@ -16,17 +16,20 @@
 </head>
 <body>
    <div class="wrap">
-       <div class="header">
-           <div class="header-logo">
-               <h1><a href="#">六角西餐廳</a></h1>
-               <ul class="menu">
-                   <li><a href="#">特色</a></li>
-                   <li><a href="#">主廚</a></li>
-                   <li><a href="#">地圖</a></li>
-               </ul>
+    <div class="header">
+        <a href="#" class="showmenu"><i class="fa-solid fa-bars"></i></a>
+          <div class="header-logo">
+              <h1><a href="#">六角西餐廳</a></h1>
+              <ul class="menu">
+                  <li><a href="#">特色</a></li>
+                  <li><a href="#">主廚</a></li>
+                  <li><a href="#">地圖</a></li>
+                  <li><a href="cart.html">購物車</a></li>
+                  <li><a href="login.html">登入</a></li>
+              </ul>
            </div>
            <div class="banner-word">
-               <h2>吃一口就無法忘懷的漢堡</h2>
+            <h2><span>咬一口</span>就無法忘懷的漢堡</h2>
                <p>七夕絕對無法錯過的好滋味</p>
                <p><i class="fa-solid fa-utensils"></i>六角大漢堡<i class="fa-solid fa-utensils"></i></p>
            </div>
@@ -39,10 +42,10 @@
             <form action="index.html">
                 <label for="email" class="login-title">Email Address*</label>
                 <i class="fa-solid fa-envelope"></i>
-                <input type="text" id="email" class="login-reply">
+                <input type="email" id="email" class="login-reply">
                 <label for="password" class="login-title">Password*</label>
                 <i class="fa-solid fa-lock"></i>
-                <input type="text" id="password"  class="login-reply">
+                <input type="password" id="password"  class="login-reply">
             </form>
             <p>忘記密碼 ?</p>
             <button class="login-sign">註冊</button>

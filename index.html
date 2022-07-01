@@ -5,10 +5,10 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>六角西餐廳</title>
-   <meta name="description" content="吃一口就無法忘懷的漢堡">
+   <meta name="description" content="咬一口就無法忘懷的漢堡">
    <link rel="shortcut icon" href="https://www.hexschool.com/favicon.ico">
    <meta property="og:title" content="六角西餐廳" />
-   <meta property="og:description" content="吃一口就無法忘懷的漢堡" />
+   <meta property="og:description" content="咬一口就無法忘懷的漢堡" />
    <meta property="og:type" content="website" />
    <meta property="og:image" content="img/bitmap.png" />
    <meta property="og:url" content="https://hexschool.github.io/Rwd_sketch_export/#artboard0" />
@@ -16,17 +16,20 @@
 </head>
 <body>
    <div class="wrap">
-       <div class="header">
-           <div class="header-logo">
-               <h1><a href="#">六角西餐廳</a></h1>
-               <ul class="menu">
-                   <li><a href="#">特色</a></li>
-                   <li><a href="#">主廚</a></li>
-                   <li><a href="#">地圖</a></li>
-               </ul>
+    <div class="header">
+        <a href="#" class="showmenu"><i class="fa-solid fa-bars"></i></a>
+          <div class="header-logo">
+              <h1><a href="#">六角西餐廳</a></h1>
+              <ul class="menu">
+                  <li><a href="#">特色</a></li>
+                  <li><a href="#">主廚</a></li>
+                  <li><a href="#">地圖</a></li>
+                  <li><a href="cart.html">購物車</a></li>
+                  <li><a href="login.html">登入</a></li>
+              </ul>
            </div>
            <div class="banner-word">
-               <h2>吃一口就無法忘懷的漢堡</h2>
+               <h2><span>咬一口</span>就無法忘懷的漢堡</h2>
                <p>七夕絕對無法錯過的好滋味</p>
                <p><i class="fa-solid fa-utensils"></i>六角大漢堡<i class="fa-solid fa-utensils"></i></p>
            </div>
@@ -58,8 +61,7 @@
             <img src="img/main_chef_brown.png" alt="main_chef_brown">
             <div class="chef-info">
                 <h2>今日主廚：帕金森、梅在怕</h2>
-                <p>Today Chef: Plum in shock</p>
-                <br>
+                <p class="todaychef">Today Chef: Plum in shock</p>
                 <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
             </div>
        </div>
@@ -101,11 +103,11 @@
                 <label for="name" class="title">姓名</label>
                 <input type="text" placeholder="六角講師吃尾牙" id="name" class="reply">
                 <label for="tel" class="title">電話</label>
-                <input type="text" placeholder="02-1234567" id="tel" class="reply">
+                <input type="tel" placeholder="02-1234567" id="tel" class="reply">
                 <label for="mail" class="title">信箱</label>
-                <input type="text" placeholder="test@gmail.com" id="mail" class="reply">
+                <input type="email" placeholder="test@gmail.com" id="mail" class="reply">
                 <label for="number" class="title">人數</label>
-                <input type="text" id="number" class="reply">
+                <input type="number" id="number" class="reply">
                 <h3>是否需要素食</h3>
                 <label for="veg-yes">是</label>
                 <input type="radio" id="veg-yes" name="veg">
@@ -115,13 +117,9 @@
                 <input type="button" value="取消" class="cancel">
                 <input type="submit" value="送出" class="submit">
                 </div>
-
             </form>
-
         </div>
        </div>
-
-
        <div class="footer">
            <div class="about">
                <h2>關於 六角西餐廳</h2>
