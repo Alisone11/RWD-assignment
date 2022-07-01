@@ -85,7 +85,7 @@ table {
     text-indent: 101%;
     overflow: hidden;
     white-space: nowrap;
-    margin: 16px 42px ;
+    margin: 16px 0px 16px 42px;
 }
 .menu{
     display: flex;
@@ -107,12 +107,12 @@ table {
     background:#9E8880;
 }
 .banner-word{
-    width: 460px;
+    width: 60%;
     color: #fff;
     background:rgba(0, 0, 0, 0.35) ;
     text-align: center;
-    margin: 60px auto 0 auto;
-    padding: 20px 22px;
+    margin: 6% auto 0 auto;
+    padding: 20px 20px;
 }
 .banner-word h2{
     font-size: 36px;
@@ -136,17 +136,22 @@ table {
 	max-height: 300px;
     width: 100%;
 }
-@media(max-width: 414px){
-    .header{
-        background: url(img/header_mobile.png);
+@media(max-width: 768px){
+    .header-logo h1 a{
+        margin: 16px 0px 16px 16px;
     }
     .banner-word span{
         display: block;
     }
     .banner-word{
-        width: 310px;
         padding: 20px 0px;
     }
+}
+@media(max-width: 414px){
+    .header{
+        background: url(img/header_mobile.png);
+    }
+    
     .showmenu{
 		display: block;
 	}
@@ -202,6 +207,22 @@ table {
     color: #3D1101;
     padding: 20px 5px;
 }
+@media(max-width: 768px){
+    .footer{
+        flex-wrap: wrap;
+    }
+    .about{
+        width: 50%;
+    }
+    .contact{
+        width: 50%;
+    }
+    .icon{
+        width: 100%;
+        text-align: right;
+        padding-top: 30px;
+    }
+}
 @media(max-width:414px){
     .footer{
         display: block;
@@ -213,11 +234,6 @@ table {
         width: 100%;
         padding: 30px 10px 30px 20px;
     }
-    .icon{
-        width: 100%;
-        text-align: right;
-    }
-
 }
 /* index */
 .content-index{
@@ -250,10 +266,7 @@ table {
 .feature li{
     width: 25%;
 }
-@media(max-width:414px){
-    .bottom-line{
-        border-top: none;
-    }
+@media(max-width:768px){
     .feature{
         display: block;
     }
@@ -261,6 +274,11 @@ table {
         width: 90%;
         margin: 0 auto;
         padding-bottom: 30px;
+    }
+}
+@media(max-width:414px){
+    .bottom-line{
+        border-top: none;
     }
 }
 .chef{
@@ -321,7 +339,7 @@ table {
     text-align: right;
     padding: 16px 0px 50px 0px;
 }
-@media(max-width:414px){
+@media(max-width:768px){
     .comment-avatar{
         display: block;
     }
@@ -350,6 +368,7 @@ table {
 }
 .form-right{
     width: 50%;
+    padding: 20px 0 20px 0;
 }
 .reserve-info .title, h3{
     display: block;
@@ -396,7 +415,7 @@ table {
     }
     .form-right{
         width: 100%;
-        padding: 20px 0 20px 0;
+        
     }
     .reserve-info .button{
         padding-right: 0;
