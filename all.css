@@ -112,7 +112,7 @@ table {
     background:rgba(0, 0, 0, 0.35) ;
     text-align: center;
     margin: 6% auto 0 auto;
-    padding: 20px 20px;
+    padding: 20px;
 }
 .banner-word h2{
     font-size: 36px;
@@ -194,6 +194,11 @@ table {
 }
 .contact ul{
     list-style-type: disc;
+    
+}
+.contact a{
+    
+    color: #3D1101;
 }
 .icon .a{
     display: block; 
@@ -432,7 +437,7 @@ table {
 }
 .order-c h2{
     font-size: 20px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 .order-item a{
     color: #3D1101;
@@ -531,7 +536,7 @@ table {
     overflow: hidden;
 }
 .product-c img{
-    max-width: 100%;
+    width: 100%;
     padding-bottom: 10px;
 }
 .product-c .best-seller{
@@ -585,9 +590,13 @@ table {
     }
 }
 @media(max-width:414px){
+    .product-c .fa-regular.fa-heart{
+        top: 10px;
+        left: 20px;
+    }
     .product-c li{
         width: 89%;
-        margin: 0 auto;
+        margin: 10px auto 10px auto;
     }
 }
 /*login*/
@@ -597,7 +606,7 @@ table {
 }
 .content-login h2{
     font-size: 20px;
-    padding-bottom: 35px;
+    margin-bottom: 35px;
 }
 .login-form{
     border-top: 3px solid #F56C23;
@@ -618,11 +627,13 @@ table {
     width: 90%;
     height: 32px;
     border: 1px solid #ccc;
+    padding-left: 30px;
 }
 .fa-solid.fa-envelope{
     color: #9E8880;
     position: absolute;
     padding: 10px;
+    
 }
 .fa-solid.fa-lock{
     color: #9E8880;
@@ -641,8 +652,7 @@ table {
     background:#a6a6a6;
     border: none;
     font-size: 14px;
-    width: 40%;
-    height: 32px;
+    padding: 0.5em 3em; 
     margin: 30px 10px 15px 0;
     border-radius: 5px;
     cursor: pointer;
@@ -652,8 +662,7 @@ table {
     background:#F56C23;
     border: none;
     font-size: 14px;
-    width: 40%;
-    height: 32px;
+    padding: 0.5em 3em; 
     margin: 30px 0 15px 0;
     border-radius: 5px;
     cursor: pointer;
